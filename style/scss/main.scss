@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+ul{
+    list-style: none;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+.g-container{
+    padding: 1rem 5rem;
+    
+    @media screen and (max-width:768px) {
+        padding: 1rem 2rem;
+    }
+}
+
+a{
+    text-decoration: none !important;
+}
+.g-x-container{
+    padding: 0rem 5rem;
+    
+}
+i{
+    cursor: pointer
+}
+
+
+@import 'components/navigation';
+@import 'components/banner';
+@import 'components/swiper'

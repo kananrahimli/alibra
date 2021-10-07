@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.g-container {
+  padding: 1rem 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .g-container {
+    padding: 1rem 2rem;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.g-x-container {
+  padding: 0rem 5rem;
+}
+
+i {
+  cursor: pointer;
+}
+
+.navigation .navigation-container {
+  z-index: 100 !important;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #eaeaea;
+}
+
+.navigation .navigation-container__list {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation .navigation-container__list i {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation .navigation-container__list--item {
+    margin: 2rem 0 !important;
+  }
+}
+
+.navigation .navigation-container__list--link {
+  color: #424242;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navigation .navigation-container__list--link:hover {
+  color: #FF4C29;
+}
+
+.navigation .navigation-container__list--link.active {
+  color: #FF4C29;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation .navigation-container__list {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #eaeaea;
+    height: 100vh;
+    z-index: 100;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 100%;
+  }
+  .navigation .navigation-container__list.showMenu {
+    left: 0;
+  }
+}
+
+.banner .banner-container {
+  position: relative;
+  height: 100vh;
+  background: #FF4C29;
+  overflow-x: hidden;
+}
+
+.banner .banner-container > div {
+  position: relative;
+}
+
+.banner .banner-container__title {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .banner .banner-container__title {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+}
+
+.banner .banner-container__sub-title {
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+
+.banner .banner-container__sub-title span {
+  color: #FFC107;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+  .banner .banner-container__sub-title {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+}
+
+.banner .banner-container__more {
+  position: absolute;
+  left: 27rem;
+  color: #FF4C29;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  background: #ffffff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .banner .banner-container__more {
+    left: 0 !important;
+  }
+}
+
+.banner .banner-container__image {
+  position: absolute;
+  top: -10px;
+  right: -100px;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .banner .banner-container__image {
+    width: 300px;
+    height: 300px;
+    top: 200px;
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .banner .banner-container__image {
+    width: 200px;
+    height: 200px;
+    top: 300px;
+    right: -20px;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-container .swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-container .swiper-button-next {
+  color: white !important;
+}
+/*# sourceMappingURL=main.css.map */

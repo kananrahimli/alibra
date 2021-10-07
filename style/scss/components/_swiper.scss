@@ -1,0 +1,22 @@
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    
+    .swiper-wrapper {
+      
+        .swiper-slide {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .swiper-button-prev{
+        color: white !important;
+        
+    }
+    .swiper-button-next{
+        color: white !important;
+        
+    }
+}
