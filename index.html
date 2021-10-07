@@ -22,19 +22,19 @@
     <header>
         <div class="navigation">
             <div class="navigation-container py-3 px-5 d-flex justify-content-between align-items-center">
-                <a href="" class="navigation-container__brand">
+                <a href="#home" class="navigation-container__brand">
                     LOGO
                 </a>
                 <ul class="navigation-container__list g-x-container  pt-3">
-                    <li class="navigation-container__list--item "><a href="#"
+                    <li class="navigation-container__list--item "><a href="#home"
                             class="navigation-container__list--link active">Ana səhifə</a></li>
-                    <li class="navigation-container__list--item "><a href="#"
+                    <li class="navigation-container__list--item "><a href="#about"
                             class="navigation-container__list--link">Haqqımızda</a></li>
-                    <li class="navigation-container__list--item "><a href="#"
+                    <li class="navigation-container__list--item "><a href="#services"
                             class="navigation-container__list--link">Xidmətlərimiz</a></li>
-                    <li class="navigation-container__list--item "><a href="#"
+                    <li class="navigation-container__list--item "><a href="#portfolio"
                             class="navigation-container__list--link">Portfolio</a></li>
-                    <li class="navigation-container__list--item "><a href="#"
+                    <li class="navigation-container__list--item "><a href="#blog"
                             class="navigation-container__list--link">Bloq</a></li>
                     <li class="navigation-container__list--item "><a href="#"
                             class="navigation-container__list--link">Bizimlə əlaqə</a></li>
@@ -47,7 +47,7 @@
     <!-- --------------------Navigation------------------ -->
 
     <!------------------------Banner--------------------- -->
-    <section class="banner">
+    <section class="banner" id="home">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide banner-container g-container pt-5">
@@ -78,7 +78,7 @@
     <!------------------------Banner--------------------- -->
 
     <!-------------------------Services------------------------ -->
-    <section class="services my-5">
+    <section class="services my-5" id="services">
         <div class="services-container">
             <h2 class="services-container__title text-center mb-5">Xidmətlərimiz</h2>
             <div class="services-container__boxes">
@@ -124,9 +124,9 @@
     <!-------------------------Services------------------------ -->
 
     <!--------------------------- ABout---------------------- -->
-    <section class="about ">
+    <section class="about " id="about">
         <div class="about-container g-container">
-            <h2 class="about-container__title text-center text-white">Haqqımızda</h2>
+            <h2 class="about-container__title text-center text-white font-weight-bold">Haqqımızda</h2>
             <p class="about-container__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quisquam
                 nostrum autem veritatis repudiandae commodi fuga est? Ex ducimus incidunt aliquid aperiam, vitae eos,
                 praesentium in voluptatibus corrupti quas facere dolores adipisci, ratione non excepturi eius autem
@@ -143,8 +143,8 @@
 
     <!-----------------Portfolio--------------------  -->
 
-    <section class="services my-5">
-        <div class="services-container">
+    <section class="services my-5" id="portfolio">
+        <div class="services-container g-container">
             <h2 class="services-container__title text-center mb-5">Portfolio</h2>
             <div class="services-container__boxes">
 
@@ -179,8 +179,53 @@
         </div>
 
     </section>
-    
+
     <!-----------------Portfolio--------------------  -->
+
+    <!-- -----------------------Blog------------ -->
+    <section class="blog " id="blog">
+        <div class="blog-container g-container">
+            <h2 class="blog-container__title text-center  font-weight-bold">Blog</h2>
+            <div class="blog-container__blogs row justify-content-center">
+                <div class="col-sm-3 mx-auto">
+                    <div class="blog-container__blogs--item "></div>
+                    <h3 class="text-center mt-3">BLOG</h3>
+                </div>
+                <div class=" col-sm-3 mx-auto ">
+                    <div class="blog-container__blogs--item "></div>
+                    <h3 class="text-center mt-3">BLOG</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------Blog----------------- -->
+
+    <!-----------------------------Contact----------------------  -->
+    <section class="contact" id="contact">
+        <div class="contact-container g-container row justify-content-center">
+            <div class="contact-container__infos col-sm-4 mx-auto">
+                <h5 class="my-5">Ünvan:<br><br> <span>Ayaz İsmayılov Küçəsi </span></h5>
+
+                <h5 class="my-5">Telefon: <br><br> <span>+994707272626</span></h5>
+
+                <h5 class="my-5">Elektron poçt: <br><br> <span>info@alibra.az</span></h5>
+
+            </div>
+            <form class="contact-container__inputs col-sm-6  row flex-column justify-content-center pt-4">
+                <div class="row my-auto justify-content-between px-3">
+                    <input type="text" class="col-md-5 my-md-0 my-3" placeholder="Ad:">
+                    <input type="text" class="col-md-5 my-md-0 my-3" placeholder="Soyad:" >
+                </div>
+                <div class="my-auto">
+                    <textarea class=" my-md-0 my-3" name="" id="" cols="30" rows="10" placeholder="Mesajınız:"></textarea>
+                </div>
+
+                <button type="submit">Göndər</button>
+                
+            </form>
+        </div>
+    </section>
+    <!-----------------------------Contact----------------------  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>

@@ -12,6 +12,7 @@ ul {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -257,7 +258,7 @@ i {
 }
 
 .services {
-  margin-top: 8rem !important;
+  padding-top: 8rem !important;
   text-transform: uppercase;
 }
 
@@ -292,7 +293,8 @@ i {
 }
 
 .about {
-  margin-top: 8rem;
+  padding-top: 8rem;
+  text-transform: uppercase;
 }
 
 .about .about-container {
@@ -311,5 +313,101 @@ i {
   .about .about-container__text {
     text-align: left;
   }
+}
+
+.blog {
+  padding-top: 8rem;
+  text-transform: uppercase;
+}
+
+.blog .blog-container {
+  width: 100%;
+  background: #FF4C29;
+}
+
+.blog .blog-container__title {
+  color: yellow;
+}
+
+.blog .blog-container__blogs--item {
+  margin-top: 4rem;
+  height: 12rem;
+  background: #ffffff;
+}
+
+.blog .blog-container__blogs h3 {
+  color: yellow;
+}
+
+.contact .contact-container button {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  background: #eaeaea;
+  padding: 0.5rem 1rem;
+  border: 1px solid #7777;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact .contact-container__infos h5 {
+  color: #FF4C29;
+  font-weight: 600;
+}
+
+.contact .contact-container__infos h5 span {
+  font-weight: 400;
+}
+
+.contact .contact-container__inputs input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs input::placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs input {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  border-radius: 10px;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background: #ff4c29;
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs textarea {
+  width: 100%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background: #ff4c29;
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact .contact-container__inputs textarea::placeholder {
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

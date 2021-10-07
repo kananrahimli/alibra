@@ -1,0 +1,50 @@
+.contact{
+    .contact-container{
+        button{
+            align-self: baseline;
+            background: #eaeaea;
+            padding: 0.5rem 1rem;
+            border: 1px solid #7777;
+            border-radius: 4px;
+            transition: 0.5s;
+
+            
+        }
+        &__infos{
+            h5{
+                color: #FF4C29;
+                font-weight: 600;
+                span{
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &__inputs{
+            input::placeholder{
+                color: #ffffff;
+            }
+            input{
+                align-self: baseline;
+                border-radius: 10px; 
+                padding: 0.5rem;
+                outline: none;
+                border: none;
+                background: #ff4c29;
+                color: #ffffff;
+            }
+
+            textarea{
+                width: 100%;
+                padding: 0.5rem;
+                outline: none;
+                border: none;
+                background: #ff4c29;
+                color: #ffffff;
+                &::placeholder{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
