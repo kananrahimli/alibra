@@ -1,0 +1,26 @@
+.services{
+    .services-container{
+        &__title{
+            color: #FF4C29;
+            font-weight: 700;
+        }
+        &__boxes{
+            height: 10rem;
+            padding: 0 16rem;
+
+            @media screen and (max-width:768px) {
+                padding: 0 2rem;
+            }
+
+            &--box{
+                background: #FF4C29 !important;
+                height: 100%;
+                width: 100%;
+
+                h4{
+                    color: #ffffff  ;
+                }
+            }
+        }
+    }
+}

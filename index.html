@@ -38,7 +38,7 @@
                             class="navigation-container__list--link">Bloq</a></li>
                     <li class="navigation-container__list--item "><a href="#"
                             class="navigation-container__list--link">Bizimlə əlaqə</a></li>
-                   <i class="fas fa-times d-md-none d-block"></i>
+                    <i class="fas fa-times d-md-none d-block"></i>
                 </ul>
                 <i class="fas fa-bars d-md-none d-block"></i>
             </div>
@@ -50,8 +50,7 @@
     <section class="banner">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide banner-container g-container pt-5"
-                    >
+                <div class="swiper-slide banner-container g-container pt-5">
                     <div class="mt-5 pt-5">
                         <h1 class="banner-container__title">REKLAM</h1>
                         <h4 class="banner-container__sub-title">Dizayn <span>Xidmətləri</span></h4>
@@ -59,7 +58,7 @@
                             <a href="" class="banner-container__more">More</a>
                         </div>
                     </div>
-                    
+
                     <img src="//into-the-program.com/demo/images/sample005.jpg" class="banner-container__image"></img>
                 </div>
                 <div class="swiper-slide banner-container g-container"
@@ -76,6 +75,49 @@
 
         </div>
     </section>
+
+
+    <!-------------------------Services------------------------ -->
+    <section class="services my-5">
+        <div class="services-container">
+            <h2 class="services-container__title text-center mb-5">Xidmətlərimiz</h2>
+            <div class="services-container__boxes">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                                <h4>Reklam</h4>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                                <h4>Dizayn</h4>
+                            </div>
+                           
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                                <h4>Poliqrafiya</h4>
+                            </div>
+                           
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                                <h4>Promo</h4>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-------------------------Services------------------------ -->
     <!------------------------Banner--------------------- -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -84,7 +126,7 @@
             // autoplay: true,
             effect: "fade",
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper-container .swiper-pagination",
                 clickable: true,
             },
             navigation: {
@@ -92,13 +134,36 @@
                 prevEl: '.swiper-button-prev',
             }
         })
+        new Swiper(".services .mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".services .swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
 
-        $(document).ready(function(){
-            $('.fa-bars').click(function(){
+                430: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        $(document).ready(function () {
+            $('.fa-bars').click(function () {
                 console.log('ssjsjssj');
                 $('.navigation-container__list ').toggleClass('showMenu')
             })
-            $('.fa-times').click(function(){
+            $('.fa-times').click(function () {
                 $('.navigation-container__list ').toggleClass('showMenu')
             })
         })
