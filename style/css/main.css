@@ -39,7 +39,7 @@ a {
 
 @media screen and (max-width: 768px) {
   .g-x-container {
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
   }
 }
 
@@ -105,7 +105,7 @@ i {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    padding-top: 4rem !important;
+    padding-top: 5rem !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
