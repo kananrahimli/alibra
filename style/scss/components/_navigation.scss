@@ -16,7 +16,7 @@
 
             &--item{
                 @media screen and (max-width:768px) {
-                    margin: 2rem 0 !important;
+                    margin: 1.5rem 0 !important;
                 }
              }
 
@@ -34,14 +34,15 @@
            
 
             @media screen and (max-width:768px) {
-                position: absolute; 
+                position: fixed; 
                 left: -100%;
                 top: 0; 
                 display: flex !important; 
-                justify-content: center;
+                justify-content: start;
+                padding-top: 4rem !important;
                 flex-direction: column;
                 background: #eaeaea;
-                height: 100vh;
+                height: 100%;
                 z-index: 100;
                 transition: 0.5s;
                 width: 100%;
