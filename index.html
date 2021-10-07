@@ -27,17 +27,18 @@
                 </a>
                 <ul class="navigation-container__list g-x-container  pt-3">
                     <li class="navigation-container__list--item "><a href="#home"
-                            class="navigation-container__list--link active">Ana səhifə</a></li>
+                            class="navigation-container__list--link active ev">Ana səhifə</a></li>
+                            <li class="navigation-container__list--item "><a href="#services"
+                                class="navigation-container__list--link xidmetler">Xidmətlərimiz</a></li>
                     <li class="navigation-container__list--item "><a href="#about"
-                            class="navigation-container__list--link">Haqqımızda</a></li>
-                    <li class="navigation-container__list--item "><a href="#services"
-                            class="navigation-container__list--link">Xidmətlərimiz</a></li>
+                            class="navigation-container__list--link haqqimizda">Haqqımızda</a></li>
+                   
                     <li class="navigation-container__list--item "><a href="#portfolio"
-                            class="navigation-container__list--link">Portfolio</a></li>
+                            class="navigation-container__list--link portfel">Portfolio</a></li>
                     <li class="navigation-container__list--item "><a href="#blog"
-                            class="navigation-container__list--link">Bloq</a></li>
-                    <li class="navigation-container__list--item "><a href="#"
-                            class="navigation-container__list--link">Bizimlə əlaqə</a></li>
+                            class="navigation-container__list--link bloq">Bloq</a></li>
+                    <li class="navigation-container__list--item "><a href="#contact"
+                            class="navigation-container__list--link elaqe">Bizimlə əlaqə</a></li>
                     <i class="fas fa-times d-md-none d-block"></i>
                 </ul>
                 <i class="fas fa-bars d-md-none d-block"></i>
@@ -58,13 +59,13 @@
                             <a href="" class="banner-container__more">More</a>
                         </div>
                     </div>
-
-                    <img src="//into-the-program.com/demo/images/sample005.jpg" class="banner-container__image"></img>
+                    
+                    <img src="/assets/img1.jpg" class="banner-container__image"></img>
                 </div>
                 <div class="swiper-slide banner-container g-container"
-                    style="background-image: url(//into-the-program.com/demo/images/sample005.jpg)"></div>
-                <div class="swiper-slide banner-container g-container"
-                    style="background-image: url(//into-the-program.com/demo/images/sample012.jpg)"></div>
+                    style="background-image: url(/assets/img1.jpg);background-size: cover; background-position: center;" ></div>
+                <!-- <div class="swiper-slide banner-container g-container"
+                    style="background-image: url(//into-the-program.com/demo/images/sample012.jpg)"></div> -->
             </div>
 
             <div class="swiper-button-prev"></div>
@@ -226,6 +227,22 @@
         </div>
     </section>
     <!-----------------------------Contact----------------------  -->
+
+
+    <!-- FOOOOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="footer-container g-container">
+                <ul class="footer-container__list ml-5">
+                    <li class="my-1"><a href="#">Menyu</a></li>
+                    <li class="my-1"><a href="#">Reklam</a></li>
+                    <li class="my-1"><a href="#">Dizayn</a></li>
+                    <li class="my-1"><a href="#">Xidmətlər</a></li>
+                    <li class="my-1"><a href="#">Promo</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
@@ -267,11 +284,48 @@
 
         $(document).ready(function () {
             $('.fa-bars').click(function () {
-                console.log('ssjsjssj');
+               
                 $('.navigation-container__list ').toggleClass('showMenu')
             })
             $('.fa-times').click(function () {
                 $('.navigation-container__list ').toggleClass('showMenu')
+            })
+
+            $('.navigation-container__list--link').click(function(){
+                $('.navigation-container__list--link').removeClass('active')
+                $(this).addClass('active')
+
+            })
+
+            $(window).scroll(function(){
+                console.log(pageYOffset);
+               if(pageYOffset>0 && pageYOffset<580){
+                $('.navigation-container__list--link').removeClass('active')
+                $('.ev').addClass('active')
+               } else if(pageYOffset>580 && pageYOffset<1160){
+                $('.navigation-container__list--link').removeClass('active')
+                $('.xidmetler').addClass('active')
+               }
+               else if(pageYOffset>1160 && pageYOffset<1660){
+                $('.navigation-container__list--link').removeClass('active')
+                $('.haqqimizda').addClass('active')
+               }
+               else if(pageYOffset>1160 && pageYOffset<2100){
+                $('.navigation-container__list--link').removeClass('active')
+                $('.portfel').addClass('active')
+               }else if(pageYOffset>2100 && pageYOffset<2900){
+                $('.navigation-container__list--link').removeClass('active')
+                $('.bloq').addClass('active')
+               }else if(pageYOffset>2900 ){
+                $('.navigation-container__list--link').removeClass('active')
+                $('.elaqe').addClass('active')
+               }
+
+
+            })
+
+            $('.navigation-container__list--link').click(function(){
+                $('.navigation-container__list').toggleClass('showMenu')
             })
         })
     </script>
