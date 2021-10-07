@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,8 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 3px;
 }
 
 .g-container {
