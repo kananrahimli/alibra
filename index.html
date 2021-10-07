@@ -21,7 +21,7 @@
     <!-- --------------------Navigation------------------ -->
     <header>
         <div class="navigation">
-            <div class="navigation-container g-container d-flex justify-content-between align-items-center">
+            <div class="navigation-container py-3 px-5 d-flex justify-content-between align-items-center">
                 <a href="" class="navigation-container__brand">
                     LOGO
                 </a>
@@ -75,7 +75,7 @@
 
         </div>
     </section>
-
+    <!------------------------Banner--------------------- -->
 
     <!-------------------------Services------------------------ -->
     <section class="services my-5">
@@ -86,28 +86,32 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                            <div
+                                class="services-container__boxes--box d-flex align-items-center justify-content-center">
                                 <h4>Reklam</h4>
                             </div>
-                            
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                            <div
+                                class="services-container__boxes--box d-flex align-items-center justify-content-center">
                                 <h4>Dizayn</h4>
                             </div>
-                           
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                            <div
+                                class="services-container__boxes--box d-flex align-items-center justify-content-center">
                                 <h4>Poliqrafiya</h4>
                             </div>
-                           
+
                         </div>
                         <div class="swiper-slide">
-                            <div class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                            <div
+                                class="services-container__boxes--box d-flex align-items-center justify-content-center">
                                 <h4>Promo</h4>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -118,7 +122,65 @@
 
     </section>
     <!-------------------------Services------------------------ -->
-    <!------------------------Banner--------------------- -->
+
+    <!--------------------------- ABout---------------------- -->
+    <section class="about ">
+        <div class="about-container g-container">
+            <h2 class="about-container__title text-center text-white">Haqqımızda</h2>
+            <p class="about-container__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quisquam
+                nostrum autem veritatis repudiandae commodi fuga est? Ex ducimus incidunt aliquid aperiam, vitae eos,
+                praesentium in voluptatibus corrupti quas facere dolores adipisci, ratione non excepturi eius autem
+                repudiandae. Eum, ullam eos? Voluptatem alias unde harum suscipit aliquam dolorum autem quisquam.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quisquam
+                nostrum autem veritatis repudiandae commodi fuga est? Ex ducimus incidunt aliquid aperiam, vitae eos,
+                praesentium in voluptatibus corrupti quas facere dolores adipisci, ratione non excepturi eius autem
+                repudiandae. Eum, ullam eos? Voluptatem alias unde harum suscipit aliquam dolorum autem quisquam.
+            </p>
+        </div>
+    </section>
+    <!--------------------------- ABout---------------------- -->
+
+
+    <!-----------------Portfolio--------------------  -->
+
+    <section class="services my-5">
+        <div class="services-container">
+            <h2 class="services-container__title text-center mb-5">Portfolio</h2>
+            <div class="services-container__boxes">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                                <h4><a href="#">Glamur</a></h4>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                                <h4><a href="#">Nus&Can</a></h4>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="services-container__boxes--box d-flex align-items-center justify-content-center">
+                                <h4><a href="#">Eldent</a> </h4>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-----------------Portfolio--------------------  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
@@ -136,7 +198,7 @@
         })
         new Swiper(".services .mySwiper", {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 0,
             pagination: {
                 el: ".services .swiper-pagination",
                 clickable: true,

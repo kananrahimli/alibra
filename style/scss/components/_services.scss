@@ -1,4 +1,6 @@
 .services{
+    margin-top: 8rem !important;
+    text-transform: uppercase;
     .services-container{
         &__title{
             color: #FF4C29;
@@ -19,6 +21,9 @@
 
                 h4{
                     color: #ffffff  ;
+                    a{
+                        color: #ffffff;
+                    }
                 }
             }
         }

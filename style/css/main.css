@@ -20,12 +20,12 @@ body {
 }
 
 .g-container {
-  padding: 1rem 5rem;
+  padding: 4rem 5rem;
 }
 
 @media screen and (max-width: 768px) {
   .g-container {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
   }
 }
 
@@ -256,6 +256,11 @@ i {
      object-fit: cover;
 }
 
+.services {
+  margin-top: 8rem !important;
+  text-transform: uppercase;
+}
+
 .services .services-container__title {
   color: #FF4C29;
   font-weight: 700;
@@ -280,5 +285,31 @@ i {
 
 .services .services-container__boxes--box h4 {
   color: #ffffff;
+}
+
+.services .services-container__boxes--box h4 a {
+  color: #ffffff;
+}
+
+.about {
+  margin-top: 8rem;
+}
+
+.about .about-container {
+  width: 100%;
+  background: #FF4C29;
+}
+
+.about .about-container__text {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #ffffff;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .about .about-container__text {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=main.css.map */

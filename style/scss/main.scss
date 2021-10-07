@@ -20,10 +20,10 @@ body{
     font-family: 'Roboto Mono', monospace;
 }
 .g-container{
-    padding: 1rem 5rem;
+    padding: 4rem 5rem;
     
     @media screen and (max-width:768px) {
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
     }
 }
 
@@ -45,3 +45,4 @@ i{
 @import 'components/banner';
 @import 'components/swiper';
 @import 'components/services';
+@import 'components/about';
