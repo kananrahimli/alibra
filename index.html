@@ -48,7 +48,7 @@
     <!-- --------------------Navigation------------------ -->
 
     <!------------------------Banner--------------------- -->
-    <section class="banner" id="home">
+    <section class="banner " id="home">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide banner-container g-container pt-5">
@@ -247,7 +247,8 @@
 
     <script>
         var mySwiper = new Swiper('.swiper-container', {
-            // autoplay: true,
+           
+            
             effect: "fade",
             pagination: {
                 el: ".swiper-container .swiper-pagination",
@@ -261,6 +262,8 @@
         new Swiper(".services .mySwiper", {
             slidesPerView: 1,
             spaceBetween: 0,
+            autoplay: 8000,
+            loop: true,
             pagination: {
                 el: ".services .swiper-pagination",
                 clickable: true,
